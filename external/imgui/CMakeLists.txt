@@ -20,6 +20,6 @@ set(IMGUI_HEADERS
     imgui/imgui_impl_opengl3.h
 )
 
-add_library(${PROJECT_NAME} STATIC ${IMGUI_SRC})
+add_library(${PROJECT_NAME} ${IMGUI_SRC})
 target_include_directories(${PROJECT_NAME} PUBLIC imgui)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw3)
